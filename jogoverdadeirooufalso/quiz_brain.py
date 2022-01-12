@@ -19,12 +19,22 @@ class QuizBrain:
 
             if self.escolha == perguntaatual.resposta:
                 scorre =scorre+1
+                contador =contador+1
                 print(f'Pontos {scorre}')
                 self.numerodaquestao = self.numerodaquestao +1
 
-                contador = +1
+                
+                
             else :
                 print('Resposta Errada')
-                print(f'Total de pontos  = {scorre}')
+                
                 contador = len(self.listadequestoes)
+              
 
+
+        print(f'Total de pontos  = {scorre}')
+        if scorre == 12:
+            print('Parabéns você zerou o quiz !!! ^^')
+
+
+     
